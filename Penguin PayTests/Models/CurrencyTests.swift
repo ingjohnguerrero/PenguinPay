@@ -29,7 +29,7 @@ class CurrencyTests: XCTestCase {
     
     func test_init_withCountryCode_isCorrect() {
         sut = Currency(countryCode: testCurrency, rate: testRate)
-        XCTAssertEqual(sut.countryCode, testCurrency)
+        XCTAssertEqual(sut.code, testCurrency)
     }
     
     func test_init_withRate_isCorrect() {

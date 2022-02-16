@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C114CF3727BD55BE004427E6 /* SendMoney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114CF3027BD55BE004427E6 /* SendMoney.storyboard */; };
+		C114CF3827BD55BE004427E6 /* SendMoneyInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3127BD55BE004427E6 /* SendMoneyInterfaces.swift */; };
+		C114CF3927BD55BE004427E6 /* SendMoneyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3227BD55BE004427E6 /* SendMoneyPresenter.swift */; };
+		C114CF3A27BD55BE004427E6 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3327BD55BE004427E6 /* SendMoneyViewController.swift */; };
+		C114CF3B27BD55BE004427E6 /* SendMoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3427BD55BE004427E6 /* SendMoneyFormatter.swift */; };
+		C114CF3C27BD55BE004427E6 /* SendMoneyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3527BD55BE004427E6 /* SendMoneyInteractor.swift */; };
+		C114CF3D27BD55BE004427E6 /* SendMoneyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF3627BD55BE004427E6 /* SendMoneyWireframe.swift */; };
+		C114CF4627BD5623004427E6 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4027BD5622004427E6 /* ViewInterface.swift */; };
+		C114CF4727BD5623004427E6 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4127BD5622004427E6 /* FormatterInterface.swift */; };
+		C114CF4827BD5623004427E6 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4227BD5622004427E6 /* InteractorInterface.swift */; };
+		C114CF4927BD5623004427E6 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4327BD5622004427E6 /* BaseWireframe.swift */; };
+		C114CF4A27BD5623004427E6 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4427BD5623004427E6 /* PresenterInterface.swift */; };
+		C114CF4B27BD5623004427E6 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4527BD5623004427E6 /* UIStoryboardExtension.swift */; };
+		C114CF4F27BD565C004427E6 /* SendMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */; };
+		C114CF5127BD7953004427E6 /* CountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF5027BD7952004427E6 /* CountryTests.swift */; };
+		C114CF5327BD7A65004427E6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF5227BD7A65004427E6 /* Country.swift */; };
 		C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12816F027BD21BF000EC665 /* AppDelegate.swift */; };
 		C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12816F227BD21BF000EC665 /* SceneDelegate.swift */; };
-		C12816F527BD21BF000EC665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12816F427BD21BF000EC665 /* ViewController.swift */; };
-		C12816F827BD21BF000EC665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12816F627BD21BF000EC665 /* Main.storyboard */; };
 		C12816FA27BD21C2000EC665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12816F927BD21C2000EC665 /* Assets.xcassets */; };
 		C12816FD27BD21C2000EC665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12816FB27BD21C2000EC665 /* LaunchScreen.storyboard */; };
 		C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128170727BD21C2000EC665 /* Penguin_PayTests.swift */; };
@@ -49,11 +63,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C114CF3027BD55BE004427E6 /* SendMoney.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendMoney.storyboard; sourceTree = "<group>"; };
+		C114CF3127BD55BE004427E6 /* SendMoneyInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyInterfaces.swift; sourceTree = "<group>"; };
+		C114CF3227BD55BE004427E6 /* SendMoneyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyPresenter.swift; sourceTree = "<group>"; };
+		C114CF3327BD55BE004427E6 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		C114CF3427BD55BE004427E6 /* SendMoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyFormatter.swift; sourceTree = "<group>"; };
+		C114CF3527BD55BE004427E6 /* SendMoneyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyInteractor.swift; sourceTree = "<group>"; };
+		C114CF3627BD55BE004427E6 /* SendMoneyWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyWireframe.swift; sourceTree = "<group>"; };
+		C114CF4027BD5622004427E6 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		C114CF4127BD5622004427E6 /* FormatterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
+		C114CF4227BD5622004427E6 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		C114CF4327BD5622004427E6 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		C114CF4427BD5623004427E6 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		C114CF4527BD5623004427E6 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyTests.swift; sourceTree = "<group>"; };
+		C114CF5027BD7952004427E6 /* CountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTests.swift; sourceTree = "<group>"; };
+		C114CF5227BD7A65004427E6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		C12816ED27BD21BF000EC665 /* Penguin Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penguin Pay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12816F027BD21BF000EC665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C12816F227BD21BF000EC665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C12816F427BD21BF000EC665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C12816F727BD21BF000EC665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C12816F927BD21C2000EC665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12816FC27BD21C2000EC665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C12816FE27BD21C2000EC665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +130,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C114CF2F27BD557C004427E6 /* SendMoney */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF3027BD55BE004427E6 /* SendMoney.storyboard */,
+				C114CF3127BD55BE004427E6 /* SendMoneyInterfaces.swift */,
+				C114CF3227BD55BE004427E6 /* SendMoneyPresenter.swift */,
+				C114CF3327BD55BE004427E6 /* SendMoneyViewController.swift */,
+				C114CF3427BD55BE004427E6 /* SendMoneyFormatter.swift */,
+				C114CF3527BD55BE004427E6 /* SendMoneyInteractor.swift */,
+				C114CF3627BD55BE004427E6 /* SendMoneyWireframe.swift */,
+			);
+			path = SendMoney;
+			sourceTree = "<group>";
+		};
+		C114CF3E27BD55CC004427E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF3F27BD5618004427E6 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C114CF3F27BD5618004427E6 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF4327BD5622004427E6 /* BaseWireframe.swift */,
+				C114CF4127BD5622004427E6 /* FormatterInterface.swift */,
+				C114CF4227BD5622004427E6 /* InteractorInterface.swift */,
+				C114CF4427BD5623004427E6 /* PresenterInterface.swift */,
+				C114CF4527BD5623004427E6 /* UIStoryboardExtension.swift */,
+				C114CF4027BD5622004427E6 /* ViewInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		C114CF4C27BD5643004427E6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF4D27BD564A004427E6 /* SendMoney */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C114CF4D27BD564A004427E6 /* SendMoney */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */,
+			);
+			path = SendMoney;
+			sourceTree = "<group>";
+		};
 		C12816E427BD21BE000EC665 = {
 			isa = PBXGroup;
 			children = (
@@ -125,14 +204,14 @@
 		C12816EF27BD21BF000EC665 /* Penguin Pay */ = {
 			isa = PBXGroup;
 			children = (
-				C128173327BD3A46000EC665 /* ModelLayer */,
 				C12816FE27BD21C2000EC665 /* Info.plist */,
 				C12816F027BD21BF000EC665 /* AppDelegate.swift */,
 				C12816F227BD21BF000EC665 /* SceneDelegate.swift */,
-				C12816F427BD21BF000EC665 /* ViewController.swift */,
 				C12816F927BD21C2000EC665 /* Assets.xcassets */,
+				C114CF3E27BD55CC004427E6 /* Common */,
 				C12816FB27BD21C2000EC665 /* LaunchScreen.storyboard */,
-				C12816F627BD21BF000EC665 /* Main.storyboard */,
+				C128173327BD3A46000EC665 /* ModelLayer */,
+				C128174727BD5426000EC665 /* Modules */,
 			);
 			path = "Penguin Pay";
 			sourceTree = "<group>";
@@ -140,6 +219,7 @@
 		C128170627BD21C2000EC665 /* Penguin PayTests */ = {
 			isa = PBXGroup;
 			children = (
+				C114CF4C27BD5643004427E6 /* Modules */,
 				C128172627BD31A1000EC665 /* ModelLayer */,
 				C128172D27BD3606000EC665 /* Models */,
 				C128170727BD21C2000EC665 /* Penguin_PayTests.swift */,
@@ -203,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				C128172E27BD363D000EC665 /* CurrencyTests.swift */,
+				C114CF5027BD7952004427E6 /* CountryTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				C128173127BD3692000EC665 /* Currency.swift */,
+				C114CF5227BD7A65004427E6 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +342,14 @@
 				C128174527BD49ED000EC665 /* CurrenciesResponseDTO.swift */,
 			);
 			path = DTOs;
+			sourceTree = "<group>";
+		};
+		C128174727BD5426000EC665 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C114CF2F27BD557C004427E6 /* SendMoney */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +459,7 @@
 				C128173E27BD40F8000EC665 /* exhangeRates.json in Resources */,
 				C12816FD27BD21C2000EC665 /* LaunchScreen.storyboard in Resources */,
 				C12816FA27BD21C2000EC665 /* Assets.xcassets in Resources */,
-				C12816F827BD21BF000EC665 /* Main.storyboard in Resources */,
+				C114CF3727BD55BE004427E6 /* SendMoney.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +485,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C128174127BD4252000EC665 /* ExchangeServiceError.swift in Sources */,
+				C114CF3C27BD55BE004427E6 /* SendMoneyInteractor.swift in Sources */,
+				C114CF4A27BD5623004427E6 /* PresenterInterface.swift in Sources */,
 				C128173227BD3693000EC665 /* Currency.swift in Sources */,
-				C12816F527BD21BF000EC665 /* ViewController.swift in Sources */,
+				C114CF3827BD55BE004427E6 /* SendMoneyInterfaces.swift in Sources */,
+				C114CF4627BD5623004427E6 /* ViewInterface.swift in Sources */,
+				C114CF4727BD5623004427E6 /* FormatterInterface.swift in Sources */,
+				C114CF3927BD55BE004427E6 /* SendMoneyPresenter.swift in Sources */,
+				C114CF4B27BD5623004427E6 /* UIStoryboardExtension.swift in Sources */,
+				C114CF5327BD7A65004427E6 /* Country.swift in Sources */,
 				C128174427BD432A000EC665 /* LatestExchangesDTO.swift in Sources */,
 				C128172C27BD32FC000EC665 /* ExchangeService.swift in Sources */,
 				C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */,
@@ -405,6 +502,11 @@
 				C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */,
 				C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */,
 				C128174627BD49ED000EC665 /* CurrenciesResponseDTO.swift in Sources */,
+				C114CF4827BD5623004427E6 /* InteractorInterface.swift in Sources */,
+				C114CF3D27BD55BE004427E6 /* SendMoneyWireframe.swift in Sources */,
+				C114CF4927BD5623004427E6 /* BaseWireframe.swift in Sources */,
+				C114CF3B27BD55BE004427E6 /* SendMoneyFormatter.swift in Sources */,
+				C114CF3A27BD55BE004427E6 /* SendMoneyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +518,8 @@
 				C128173827BD3E2D000EC665 /* JsonHelperTests.swift in Sources */,
 				C128172927BD3268000EC665 /* MockedExchangeServiceTests.swift in Sources */,
 				C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */,
+				C114CF5127BD7953004427E6 /* CountryTests.swift in Sources */,
+				C114CF4F27BD565C004427E6 /* SendMoneyTests.swift in Sources */,
 				C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,14 +549,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C12816F627BD21BF000EC665 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C12816F727BD21BF000EC665 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C12816FB27BD21C2000EC665 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -592,7 +688,7 @@
 				INFOPLIST_FILE = "Penguin Pay/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SendMoney;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -620,7 +716,7 @@
 				INFOPLIST_FILE = "Penguin Pay/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SendMoney;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

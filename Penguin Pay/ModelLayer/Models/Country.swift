@@ -1,5 +1,5 @@
 //
-//  Currency.swift
+//  Country.swift
 //  Penguin Pay
 //
 //  Created by John Edwin Guerrero Ayala on 16/02/22.
@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Currency {
+struct Country {
+    var name: String
     var code: String
-    var rate: Float
+    var phonePrefix: String
+    var digitsAfterPrefix: Int
 }
