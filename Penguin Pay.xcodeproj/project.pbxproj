@@ -16,6 +16,8 @@
 		C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128170727BD21C2000EC665 /* Penguin_PayTests.swift */; };
 		C128171227BD21C2000EC665 /* Penguin_PayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128171127BD21C2000EC665 /* Penguin_PayUITests.swift */; };
 		C128171427BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128171327BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift */; };
+		C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172127BD2552000EC665 /* BinaryHelperTests.swift */; };
+		C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172427BD260F000EC665 /* BinaryHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C128170D27BD21C2000EC665 /* Penguin PayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Penguin PayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C128171127BD21C2000EC665 /* Penguin_PayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penguin_PayUITests.swift; sourceTree = "<group>"; };
 		C128171327BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penguin_PayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C128172127BD2552000EC665 /* BinaryHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHelperTests.swift; sourceTree = "<group>"; };
+		C128172427BD260F000EC665 /* BinaryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		C12816EF27BD21BF000EC665 /* Penguin Pay */ = {
 			isa = PBXGroup;
 			children = (
+				C128172327BD2600000EC665 /* Helpers */,
 				C12816F027BD21BF000EC665 /* AppDelegate.swift */,
 				C12816F227BD21BF000EC665 /* SceneDelegate.swift */,
 				C12816F427BD21BF000EC665 /* ViewController.swift */,
@@ -113,6 +118,7 @@
 		C128170627BD21C2000EC665 /* Penguin PayTests */ = {
 			isa = PBXGroup;
 			children = (
+				C128172027BD253C000EC665 /* Helpers */,
 				C128170727BD21C2000EC665 /* Penguin_PayTests.swift */,
 			);
 			path = "Penguin PayTests";
@@ -125,6 +131,22 @@
 				C128171327BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift */,
 			);
 			path = "Penguin PayUITests";
+			sourceTree = "<group>";
+		};
+		C128172027BD253C000EC665 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C128172127BD2552000EC665 /* BinaryHelperTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C128172327BD2600000EC665 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C128172427BD260F000EC665 /* BinaryHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +282,7 @@
 			files = (
 				C12816F527BD21BF000EC665 /* ViewController.swift in Sources */,
 				C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */,
+				C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */,
 				C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */,
 				C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
