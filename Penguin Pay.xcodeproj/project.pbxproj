@@ -18,6 +18,11 @@
 		C128171427BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128171327BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift */; };
 		C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172127BD2552000EC665 /* BinaryHelperTests.swift */; };
 		C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172427BD260F000EC665 /* BinaryHelper.swift */; };
+		C128172927BD3268000EC665 /* MockedExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172827BD3267000EC665 /* MockedExchangeServiceTests.swift */; };
+		C128172C27BD32FC000EC665 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172B27BD32FB000EC665 /* ExchangeService.swift */; };
+		C128172F27BD363D000EC665 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172E27BD363D000EC665 /* CurrencyTests.swift */; };
+		C128173227BD3693000EC665 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173127BD3692000EC665 /* Currency.swift */; };
+		C128173627BD3AB8000EC665 /* MockedExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173527BD3AB7000EC665 /* MockedExchangeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		C128171327BD21C2000EC665 /* Penguin_PayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penguin_PayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C128172127BD2552000EC665 /* BinaryHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHelperTests.swift; sourceTree = "<group>"; };
 		C128172427BD260F000EC665 /* BinaryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHelper.swift; sourceTree = "<group>"; };
+		C128172827BD3267000EC665 /* MockedExchangeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedExchangeServiceTests.swift; sourceTree = "<group>"; };
+		C128172B27BD32FB000EC665 /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
+		C128172E27BD363D000EC665 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
+		C128173127BD3692000EC665 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		C128173527BD3AB7000EC665 /* MockedExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedExchangeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +113,14 @@
 		C12816EF27BD21BF000EC665 /* Penguin Pay */ = {
 			isa = PBXGroup;
 			children = (
-				C128172327BD2600000EC665 /* Helpers */,
+				C128173327BD3A46000EC665 /* ModelLayer */,
+				C12816FE27BD21C2000EC665 /* Info.plist */,
 				C12816F027BD21BF000EC665 /* AppDelegate.swift */,
 				C12816F227BD21BF000EC665 /* SceneDelegate.swift */,
 				C12816F427BD21BF000EC665 /* ViewController.swift */,
-				C12816F627BD21BF000EC665 /* Main.storyboard */,
 				C12816F927BD21C2000EC665 /* Assets.xcassets */,
 				C12816FB27BD21C2000EC665 /* LaunchScreen.storyboard */,
-				C12816FE27BD21C2000EC665 /* Info.plist */,
+				C12816F627BD21BF000EC665 /* Main.storyboard */,
 			);
 			path = "Penguin Pay";
 			sourceTree = "<group>";
@@ -118,7 +128,8 @@
 		C128170627BD21C2000EC665 /* Penguin PayTests */ = {
 			isa = PBXGroup;
 			children = (
-				C128172027BD253C000EC665 /* Helpers */,
+				C128172627BD31A1000EC665 /* ModelLayer */,
+				C128172D27BD3606000EC665 /* Models */,
 				C128170727BD21C2000EC665 /* Penguin_PayTests.swift */,
 			);
 			path = "Penguin PayTests";
@@ -147,6 +158,66 @@
 				C128172427BD260F000EC665 /* BinaryHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C128172627BD31A1000EC665 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C128172027BD253C000EC665 /* Helpers */,
+				C128172727BD31AA000EC665 /* Services */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		C128172727BD31AA000EC665 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C128172827BD3267000EC665 /* MockedExchangeServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C128172A27BD32EF000EC665 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C128172B27BD32FB000EC665 /* ExchangeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C128172D27BD3606000EC665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C128172E27BD363D000EC665 /* CurrencyTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C128173027BD367F000EC665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C128173127BD3692000EC665 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C128173327BD3A46000EC665 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C128173427BD3A98000EC665 /* MockedWebServer */,
+				C128172327BD2600000EC665 /* Helpers */,
+				C128173027BD367F000EC665 /* Models */,
+				C128172A27BD32EF000EC665 /* Services */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		C128173427BD3A98000EC665 /* MockedWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				C128173527BD3AB7000EC665 /* MockedExchangeService.swift */,
+			);
+			path = MockedWebServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C128173227BD3693000EC665 /* Currency.swift in Sources */,
 				C12816F527BD21BF000EC665 /* ViewController.swift in Sources */,
+				C128172C27BD32FC000EC665 /* ExchangeService.swift in Sources */,
 				C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */,
+				C128173627BD3AB8000EC665 /* MockedExchangeService.swift in Sources */,
 				C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */,
 				C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,6 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C128172F27BD363D000EC665 /* CurrencyTests.swift in Sources */,
+				C128172927BD3268000EC665 /* MockedExchangeServiceTests.swift in Sources */,
 				C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */,
 				C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */,
 			);
