@@ -24,5 +24,21 @@ class MockedExchangeServiceTests: XCTestCase {
     func test_init_isNotNil() {
         XCTAssertNotNil(sut)
     }
+    
+    func test_latestRates_requestedLatest_resultIsNotEmpty() {
+        let latestRatesExpectation = expectation(description: "Wait for latest rates")
+        var currencyRates: [Currency] = []
+        var error: Error?
+        
+        sut.latestRates{ (lastestCurrencies, responseError) in
+            currencyRates = lastestCurrencies
+            error = responseError
+            latestRatesExpectation.fulfill()
+        }
+        
+        wait(for: [latestRatesExpectation], timeout: 3)
+        XCTAssertNil(error)
+        XCTAssertFalse(currencyRates.isEmpty)
+    }
 
 }

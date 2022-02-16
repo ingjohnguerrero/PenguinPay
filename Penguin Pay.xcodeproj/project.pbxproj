@@ -23,6 +23,9 @@
 		C128172F27BD363D000EC665 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128172E27BD363D000EC665 /* CurrencyTests.swift */; };
 		C128173227BD3693000EC665 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173127BD3692000EC665 /* Currency.swift */; };
 		C128173627BD3AB8000EC665 /* MockedExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173527BD3AB7000EC665 /* MockedExchangeService.swift */; };
+		C128173827BD3E2D000EC665 /* JsonHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173727BD3E2D000EC665 /* JsonHelperTests.swift */; };
+		C128173B27BD3FC7000EC665 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173A27BD3FC7000EC665 /* JsonHelper.swift */; };
+		C128173E27BD40F8000EC665 /* exhangeRates.json in Resources */ = {isa = PBXBuildFile; fileRef = C128173D27BD40F8000EC665 /* exhangeRates.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		C128172E27BD363D000EC665 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 		C128173127BD3692000EC665 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		C128173527BD3AB7000EC665 /* MockedExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedExchangeService.swift; sourceTree = "<group>"; };
+		C128173727BD3E2D000EC665 /* JsonHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelperTests.swift; sourceTree = "<group>"; };
+		C128173A27BD3FC7000EC665 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		C128173D27BD40F8000EC665 /* exhangeRates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exhangeRates.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C128172127BD2552000EC665 /* BinaryHelperTests.swift */,
+				C128173727BD3E2D000EC665 /* JsonHelperTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C128172427BD260F000EC665 /* BinaryHelper.swift */,
+				C128173A27BD3FC7000EC665 /* JsonHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,9 +223,18 @@
 		C128173427BD3A98000EC665 /* MockedWebServer */ = {
 			isa = PBXGroup;
 			children = (
+				C128173C27BD3FFE000EC665 /* json */,
 				C128173527BD3AB7000EC665 /* MockedExchangeService.swift */,
 			);
 			path = MockedWebServer;
+			sourceTree = "<group>";
+		};
+		C128173C27BD3FFE000EC665 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				C128173D27BD40F8000EC665 /* exhangeRates.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C128173E27BD40F8000EC665 /* exhangeRates.json in Resources */,
 				C12816FD27BD21C2000EC665 /* LaunchScreen.storyboard in Resources */,
 				C12816FA27BD21C2000EC665 /* Assets.xcassets in Resources */,
 				C12816F827BD21BF000EC665 /* Main.storyboard in Resources */,
@@ -356,6 +374,7 @@
 				C128172C27BD32FC000EC665 /* ExchangeService.swift in Sources */,
 				C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */,
 				C128173627BD3AB8000EC665 /* MockedExchangeService.swift in Sources */,
+				C128173B27BD3FC7000EC665 /* JsonHelper.swift in Sources */,
 				C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */,
 				C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C128172F27BD363D000EC665 /* CurrencyTests.swift in Sources */,
+				C128173827BD3E2D000EC665 /* JsonHelperTests.swift in Sources */,
 				C128172927BD3268000EC665 /* MockedExchangeServiceTests.swift in Sources */,
 				C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */,
 				C128170827BD21C2000EC665 /* Penguin_PayTests.swift in Sources */,

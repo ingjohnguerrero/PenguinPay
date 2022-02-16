@@ -8,6 +8,9 @@
 import Foundation
 
 class MockedExchangeService: ExchangeService {
+    
+    /// Get latest exchange rates from json files
+    /// - Parameter completion: Response handling closure
     func latestRates(completion: @escaping ([Currency], Error?) -> Void) {
         completion([], nil)
     }
