@@ -26,6 +26,9 @@
 		C128173827BD3E2D000EC665 /* JsonHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173727BD3E2D000EC665 /* JsonHelperTests.swift */; };
 		C128173B27BD3FC7000EC665 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128173A27BD3FC7000EC665 /* JsonHelper.swift */; };
 		C128173E27BD40F8000EC665 /* exhangeRates.json in Resources */ = {isa = PBXBuildFile; fileRef = C128173D27BD40F8000EC665 /* exhangeRates.json */; };
+		C128174127BD4252000EC665 /* ExchangeServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128174027BD4252000EC665 /* ExchangeServiceError.swift */; };
+		C128174427BD432A000EC665 /* LatestExchangesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128174327BD432A000EC665 /* LatestExchangesDTO.swift */; };
+		C128174627BD49ED000EC665 /* CurrenciesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128174527BD49ED000EC665 /* CurrenciesResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		C128173727BD3E2D000EC665 /* JsonHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelperTests.swift; sourceTree = "<group>"; };
 		C128173A27BD3FC7000EC665 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		C128173D27BD40F8000EC665 /* exhangeRates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exhangeRates.json; sourceTree = "<group>"; };
+		C128174027BD4252000EC665 /* ExchangeServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceError.swift; sourceTree = "<group>"; };
+		C128174327BD432A000EC665 /* LatestExchangesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestExchangesDTO.swift; sourceTree = "<group>"; };
+		C128174527BD49ED000EC665 /* CurrenciesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponseDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,8 +218,10 @@
 		C128173327BD3A46000EC665 /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
-				C128173427BD3A98000EC665 /* MockedWebServer */,
+				C128174227BD4307000EC665 /* DTOs */,
+				C128173F27BD4230000EC665 /* Errors */,
 				C128172327BD2600000EC665 /* Helpers */,
+				C128173427BD3A98000EC665 /* MockedWebServer */,
 				C128173027BD367F000EC665 /* Models */,
 				C128172A27BD32EF000EC665 /* Services */,
 			);
@@ -235,6 +243,23 @@
 				C128173D27BD40F8000EC665 /* exhangeRates.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		C128173F27BD4230000EC665 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C128174027BD4252000EC665 /* ExchangeServiceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		C128174227BD4307000EC665 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				C128174327BD432A000EC665 /* LatestExchangesDTO.swift */,
+				C128174527BD49ED000EC665 /* CurrenciesResponseDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,14 +394,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C128174127BD4252000EC665 /* ExchangeServiceError.swift in Sources */,
 				C128173227BD3693000EC665 /* Currency.swift in Sources */,
 				C12816F527BD21BF000EC665 /* ViewController.swift in Sources */,
+				C128174427BD432A000EC665 /* LatestExchangesDTO.swift in Sources */,
 				C128172C27BD32FC000EC665 /* ExchangeService.swift in Sources */,
 				C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */,
 				C128173627BD3AB8000EC665 /* MockedExchangeService.swift in Sources */,
 				C128173B27BD3FC7000EC665 /* JsonHelper.swift in Sources */,
 				C128172527BD260F000EC665 /* BinaryHelper.swift in Sources */,
 				C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */,
+				C128174627BD49ED000EC665 /* CurrenciesResponseDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
