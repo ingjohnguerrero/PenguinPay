@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct BinaryHelper {
-    static func binary(from floatNumber: Float) -> UInt32 {
-        return floatNumber.bitPattern
+struct BinaryHelper {    
+    static func uint(from binaryString: String) -> UInt32 {
+        return UInt32(binaryString, radix: 2) ?? 0
     }
     
-    static func float(from binaryNumber: UInt32) -> Float {
-        return Float(bitPattern: binaryNumber)
+    static func binary(from uintNumber: UInt32) -> String {
+        return String(uintNumber, radix: 2)
     }
 }

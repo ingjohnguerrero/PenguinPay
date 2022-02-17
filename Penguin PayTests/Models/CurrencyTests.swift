@@ -16,7 +16,7 @@ class CurrencyTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sut = Currency(countryCode: testCurrency, rate: testRate)
+        sut = Currency(code: testCurrency, rate: testRate)
     }
 
     override func tearDownWithError() throws {
@@ -28,12 +28,12 @@ class CurrencyTests: XCTestCase {
     }
     
     func test_init_withCountryCode_isCorrect() {
-        sut = Currency(countryCode: testCurrency, rate: testRate)
-        XCTAssertEqual(sut.countryCode, testCurrency)
+        sut = Currency(code: testCurrency, rate: testRate)
+        XCTAssertEqual(sut.code, testCurrency)
     }
     
     func test_init_withRate_isCorrect() {
-        sut = Currency(countryCode: testCurrency, rate: testRate)
+        sut = Currency(code: testCurrency, rate: testRate)
         XCTAssertEqual(sut.rate, testRate)
     }
     

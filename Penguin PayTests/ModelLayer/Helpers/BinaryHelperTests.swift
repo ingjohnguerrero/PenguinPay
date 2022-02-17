@@ -18,23 +18,18 @@ class BinaryHelperTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func test_binaryHelper_withFloatNumber_resultInBinary() {
-        let testFloatNumber = Float(1.5)
-        let expectedBinaryNumber = testFloatNumber.bitPattern
-        
-        let binaryNumber = BinaryHelper.binary(from: 1.5)
-        
-        XCTAssertEqual(binaryNumber, expectedBinaryNumber)
+    func test_Conversion_WithBinary_resultsInInt() {
+        let testBinary = "010110"
+        let uintNumber = BinaryHelper.uint(from: testBinary)
+        XCTAssertEqual(uintNumber, 22)
     }
     
-    func test_binaryHelper_withBinary_resultsInFloat() {
-        let testFloatNumber = Float(1.5)
-        let binaryNumber = testFloatNumber.bitPattern
-        let expectedFloatNumber = Float(bitPattern: binaryNumber)
-        
-        let floatNumber = BinaryHelper.float(from: binaryNumber)
-        
-        XCTAssertEqual(floatNumber, expectedFloatNumber)
+    func test_Conversion_WithBinaryRateConversion_returnsCorrectBinary() {
+        let testBinary = "010110"
+        let uintNumber: Float = Float(BinaryHelper.uint(from: testBinary))
+        let recipientAmount = UInt32(uintNumber * 361.50)
+        let recipientAmountString = BinaryHelper.binary(from: recipientAmount)
+        XCTAssertEqual(recipientAmountString, "1111100010001")
     }
 }
 
