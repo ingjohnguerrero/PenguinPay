@@ -27,10 +27,34 @@ final class SendMoneyWireframe: BaseWireframe<SendMoneyViewController> {
         let presenter = SendMoneyPresenter(view: moduleViewController, formatter: formatter, interactor: interactor, wireframe: self)
         moduleViewController.presenter = presenter
     }
-
+    
+    init(moduleViewController: SendMoneyViewController) {
+        super.init(viewController: moduleViewController)
+        let formatter = SendMoneyFormatter()
+        let interactor = SendMoneyInteractor()
+        let presenter = SendMoneyPresenter(view: moduleViewController, formatter: formatter, interactor: interactor, wireframe: self)
+        moduleViewController.presenter = presenter
+    }
 }
 
 // MARK: - Extensions -
 
 extension SendMoneyWireframe: SendMoneyWireframeInterface {
+    func presentSendPaymentAlert() {
+        let alertController: UIAlertController = UIAlertController(
+            title: "Sending..",
+            message: "Transaction is being sent",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        
+        let cancelAction: UIAlertAction = UIAlertAction(
+            title: "Dismiss",
+            style: UIAlertAction.Style.cancel,
+            handler: nil
+        )
+
+        alertController.addAction(cancelAction)
+        
+        self.viewController.present(alertController, animated: true, completion: nil)
+    }
 }
