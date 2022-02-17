@@ -23,6 +23,7 @@
 		C114CF4F27BD565C004427E6 /* SendMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */; };
 		C114CF5127BD7953004427E6 /* CountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF5027BD7952004427E6 /* CountryTests.swift */; };
 		C114CF5327BD7A65004427E6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF5227BD7A65004427E6 /* Country.swift */; };
+		C114CF5527BDA624004427E6 /* SendMoneyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CF5427BDA624004427E6 /* SendMoneyFormatterTests.swift */; };
 		C12816F127BD21BF000EC665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12816F027BD21BF000EC665 /* AppDelegate.swift */; };
 		C12816F327BD21BF000EC665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12816F227BD21BF000EC665 /* SceneDelegate.swift */; };
 		C12816FA27BD21C2000EC665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12816F927BD21C2000EC665 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyTests.swift; sourceTree = "<group>"; };
 		C114CF5027BD7952004427E6 /* CountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTests.swift; sourceTree = "<group>"; };
 		C114CF5227BD7A65004427E6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C114CF5427BDA624004427E6 /* SendMoneyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyFormatterTests.swift; sourceTree = "<group>"; };
 		C12816ED27BD21BF000EC665 /* Penguin Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penguin Pay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12816F027BD21BF000EC665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C12816F227BD21BF000EC665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				C114CF4E27BD565C004427E6 /* SendMoneyTests.swift */,
+				C114CF5427BDA624004427E6 /* SendMoneyFormatterTests.swift */,
 			);
 			path = SendMoney;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C128172F27BD363D000EC665 /* CurrencyTests.swift in Sources */,
+				C114CF5527BDA624004427E6 /* SendMoneyFormatterTests.swift in Sources */,
 				C128173827BD3E2D000EC665 /* JsonHelperTests.swift in Sources */,
 				C128172927BD3268000EC665 /* MockedExchangeServiceTests.swift in Sources */,
 				C128172227BD2552000EC665 /* BinaryHelperTests.swift in Sources */,

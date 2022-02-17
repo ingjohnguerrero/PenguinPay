@@ -20,6 +20,9 @@ protocol SendMoneyPresenterInterface: PresenterInterface {
 }
 
 protocol SendMoneyFormatterInterface: FormatterInterface {
+    func binaryAmount(fromUInt uintNumber: UInt32) -> String
+    func binaryAmount(fromFloat floatNumber: Float) -> String
+    func intAmount(fromBinary binaryNumber: String) -> UInt32
 }
 
 protocol SendMoneyInteractorInterface: InteractorInterface {

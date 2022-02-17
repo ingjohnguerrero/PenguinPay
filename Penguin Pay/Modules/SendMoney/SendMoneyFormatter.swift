@@ -16,4 +16,16 @@ final class SendMoneyFormatter {
 // MARK: - Extensions -
 
 extension SendMoneyFormatter: SendMoneyFormatterInterface {
+    func binaryAmount(fromFloat floatNumber: Float) -> String {
+        let intAmount = UInt32(floatNumber)
+        return binaryAmount(fromUInt: intAmount)
+    }
+    
+    func intAmount(fromBinary binaryNumber: String) -> UInt32 {
+        return BinaryHelper.uint(from: binaryNumber)
+    }
+    
+    func binaryAmount(fromUInt uintNumber: UInt32) -> String {
+        return BinaryHelper.binary(from: uintNumber)
+    }
 }

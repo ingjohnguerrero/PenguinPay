@@ -19,6 +19,7 @@ final class SendMoneyViewController: UIViewController {
     @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var phoneCodeLabel: UILabel!
     @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
     var countryPickerView = UIPickerView()
     
     // MARK: - Public properties -
@@ -31,6 +32,11 @@ final class SendMoneyViewController: UIViewController {
         Country(name: "Uganda", code: "UGX", phonePrefix: "+256", digitsAfterPrefix: 7)
     ]
     var selectedCountry: Country?
+    let allowedCharacters = CharacterSet(charactersIn:"01").inverted
+    
+    // MARK: - Private properties -
+    
+    private var phonenumberLimit = 9
 
     // MARK: - Lifecycle -
     
@@ -57,6 +63,8 @@ extension SendMoneyViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         countryTextField.text = countries[row].name
         phoneCodeLabel.text = countries[row].phonePrefix
+        phonenumberLimit = countries[row].digitsAfterPrefix
+        phoneTextField.text = ""
         countryTextField.resignFirstResponder()
     }
 }
@@ -72,5 +80,29 @@ extension SendMoneyViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\(countries[row].phonePrefix) - \(countries[row].name)"
+    }
+}
+
+extension SendMoneyViewController: UITextFieldDelegate {
+    fileprivate func isPhoneLimitReached(currentText: String?, newText: String) -> Bool {
+        return (currentText?.count ?? 0 + newText.count) < phonenumberLimit
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        switch textField {
+            case amountTextField:
+                let components = string.components(separatedBy: allowedCharacters)
+                let filtered = components.joined(separator: "")
+                if string == filtered {
+                    return true
+                } else {
+                    return false
+                }
+            case phoneTextField:
+                return isPhoneLimitReached(currentText: textField.text, newText: string)
+            default:
+                return true
+        }
     }
 }

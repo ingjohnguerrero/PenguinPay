@@ -68,5 +68,12 @@ class SendMoneyTests: XCTestCase {
             of: sendMoneyView.view) ?? false
         XCTAssertTrue(phoneTextFieldIsSubView)
     }
+    
+    func test_View_HasAmountTextFieldIsSubView() {
+        let amountTextFieldIsSubView =
+        sendMoneyView.amountTextField?.isDescendant(
+            of: sendMoneyView.view) ?? false
+        XCTAssertTrue(amountTextFieldIsSubView)
+    }
 
 }
