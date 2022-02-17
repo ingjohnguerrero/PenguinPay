@@ -26,6 +26,11 @@ class SendMoneyFormatterTests: XCTestCase {
     }
     
     func test_Format_WithGivenBinary_ReturnsInt() {
+        let intNumber = sut.intAmount(fromBinary: "010110")
+        XCTAssertEqual(intNumber, 22)
+    }
+    
+    func test_Format_WithGivenBinary_ReturnsFloat() {
         let floatNumber = sut.intAmount(fromBinary: "010110")
         XCTAssertEqual(floatNumber, 22)
     }

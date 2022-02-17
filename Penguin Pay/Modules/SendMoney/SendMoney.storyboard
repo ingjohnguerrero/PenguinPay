@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wo-RC-2hC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="6Wo-RC-2hC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARi-tH-IZa">
@@ -25,7 +25,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-eD-XM2">
-                                        <rect key="frame" x="20" y="65.5" width="335" height="351.5"/>
+                                        <rect key="frame" x="20" y="65.5" width="335" height="392.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill the form with your recipient's information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-Cx-hoN">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="41"/>
@@ -37,11 +37,17 @@
                                                 <rect key="frame" x="0.0" y="51" width="335" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                <connections>
+                                                    <action selector="textFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="D6M-GL-bfb"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aP1-Dy-m9h">
                                                 <rect key="frame" x="0.0" y="95" width="335" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="5XZ-pS-9UO"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPc-6M-unL">
                                                 <rect key="frame" x="0.0" y="139" width="335" height="34"/>
@@ -65,6 +71,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                         <connections>
+                                                            <action selector="textFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="acd-1Z-xaU"/>
                                                             <outlet property="delegate" destination="zIc-eW-6fX" id="ra5-ZL-8pa"/>
                                                         </connections>
                                                     </textField>
@@ -75,11 +82,11 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <connections>
-                                                    <action selector="amountTextFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="AQo-6W-U8T"/>
+                                                    <action selector="textFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="TzA-49-r8w"/>
                                                     <outlet property="delegate" destination="zIc-eW-6fX" id="LAm-ac-zLM"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient expected amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-qT-9WB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient will receive:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-qT-9WB">
                                                 <rect key="frame" x="0.0" y="271" width="335" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -91,12 +98,21 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6l-vT-HEL">
+                                                <rect key="frame" x="0.0" y="361.5" width="335" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Send!"/>
+                                                <connections>
+                                                    <action selector="sendMoneyButtonTapped:" destination="zIc-eW-6fX" eventType="touchUpInside" id="AEw-ko-hh0"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="aP1-Dy-m9h" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="0rj-Ao-pOO"/>
                                             <constraint firstItem="GPc-6M-unL" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="1Im-kd-2YZ"/>
                                             <constraint firstItem="EWZ-lV-HFK" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="MU7-CK-DDU"/>
                                             <constraint firstItem="aye-qT-9WB" firstAttribute="width" secondItem="PVB-Cx-hoN" secondAttribute="width" id="NEb-xp-Mi7"/>
+                                            <constraint firstItem="o6l-vT-HEL" firstAttribute="centerX" secondItem="PVB-Cx-hoN" secondAttribute="centerX" id="PC8-kH-cT2"/>
                                             <constraint firstItem="DvL-XJ-fC9" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="TQg-Bd-poN"/>
                                             <constraint firstItem="PVB-Cx-hoN" firstAttribute="width" secondItem="DTh-eD-XM2" secondAttribute="width" id="iIT-L9-vtL"/>
                                             <constraint firstItem="gKL-4H-BOB" firstAttribute="width" secondItem="DTh-eD-XM2" secondAttribute="width" id="kWK-LG-PGn"/>
@@ -134,6 +150,7 @@
                         <outlet property="lastNameTextField" destination="aP1-Dy-m9h" id="K3r-jG-R5z"/>
                         <outlet property="phoneCodeLabel" destination="Cnq-aM-qmV" id="O7Y-dZ-j3d"/>
                         <outlet property="phoneTextField" destination="1z5-Wf-5Mb" id="9Sd-0M-Thq"/>
+                        <outlet property="sendMoneyButton" destination="o6l-vT-HEL" id="0uE-ph-uyA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>

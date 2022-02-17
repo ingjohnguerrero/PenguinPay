@@ -11,9 +11,25 @@
 import Foundation
 
 final class SendMoneyInteractor {
+    var exchangeService: ExchangeService!
+    var currencyRates: [Currency] = []
+    init(service: ExchangeService = MockedExchangeService()) {
+        self.exchangeService = service
+    }
 }
 
 // MARK: - Extensions -
 
 extension SendMoneyInteractor: SendMoneyInteractorInterface {
+    func updateExchangeRates(completion: @escaping (_ error: Error?) -> Void) {
+        exchangeService.latestRates { [weak self] (currencies, error) in
+            self?.currencyRates = currencies
+            completion(error)
+        }
+    }
+    
+    func exchangeRate(for currencyCode: String) -> Float {
+        let exchangeRates = currencyRates.filter { $0.code == currencyCode }
+        return exchangeRates.first?.rate ?? 0.0
+    }
 }
