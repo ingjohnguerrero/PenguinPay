@@ -25,7 +25,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-eD-XM2">
-                                        <rect key="frame" x="20" y="65.5" width="335" height="261"/>
+                                        <rect key="frame" x="20" y="65.5" width="335" height="351.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill the form with your recipient's information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-Cx-hoN">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="41"/>
@@ -75,13 +75,28 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <connections>
+                                                    <action selector="amountTextFieldEditingChanged:" destination="zIc-eW-6fX" eventType="editingChanged" id="AQo-6W-U8T"/>
                                                     <outlet property="delegate" destination="zIc-eW-6fX" id="LAm-ac-zLM"/>
                                                 </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient expected amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-qT-9WB">
+                                                <rect key="frame" x="0.0" y="271" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-lV-HFK">
+                                                <rect key="frame" x="0.0" y="301.5" width="335" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="aP1-Dy-m9h" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="0rj-Ao-pOO"/>
                                             <constraint firstItem="GPc-6M-unL" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="1Im-kd-2YZ"/>
+                                            <constraint firstItem="EWZ-lV-HFK" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="MU7-CK-DDU"/>
+                                            <constraint firstItem="aye-qT-9WB" firstAttribute="width" secondItem="PVB-Cx-hoN" secondAttribute="width" id="NEb-xp-Mi7"/>
                                             <constraint firstItem="DvL-XJ-fC9" firstAttribute="width" secondItem="gKL-4H-BOB" secondAttribute="width" id="TQg-Bd-poN"/>
                                             <constraint firstItem="PVB-Cx-hoN" firstAttribute="width" secondItem="DTh-eD-XM2" secondAttribute="width" id="iIT-L9-vtL"/>
                                             <constraint firstItem="gKL-4H-BOB" firstAttribute="width" secondItem="DTh-eD-XM2" secondAttribute="width" id="kWK-LG-PGn"/>
@@ -114,6 +129,7 @@
                     <connections>
                         <outlet property="amountTextField" destination="DvL-XJ-fC9" id="4xo-Ch-4a2"/>
                         <outlet property="countryTextField" destination="GPc-6M-unL" id="TyQ-AN-0pc"/>
+                        <outlet property="expectedAmountLabel" destination="EWZ-lV-HFK" id="fXX-j4-yR3"/>
                         <outlet property="firstNameTextField" destination="gKL-4H-BOB" id="6Tf-Hj-c9J"/>
                         <outlet property="lastNameTextField" destination="aP1-Dy-m9h" id="K3r-jG-R5z"/>
                         <outlet property="phoneCodeLabel" destination="Cnq-aM-qmV" id="O7Y-dZ-j3d"/>

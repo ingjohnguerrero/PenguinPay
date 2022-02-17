@@ -20,6 +20,7 @@ final class SendMoneyViewController: UIViewController {
     @IBOutlet weak var phoneCodeLabel: UILabel!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var expectedAmountLabel: UILabel!
     var countryPickerView = UIPickerView()
     
     // MARK: - Public properties -
@@ -52,6 +53,15 @@ final class SendMoneyViewController: UIViewController {
         countryPickerView.dataSource = self
     }
 
+    @IBAction func amountTextFieldEditingChanged(_ sender: Any) {
+        let amountTextFieldText = amountTextField.text ?? ""
+        
+        let uintNumber: Float = Float(BinaryHelper.uint(from: amountTextFieldText))
+        let recipientAmount = UInt32(uintNumber * 361.50)
+        let recipientAmountString = BinaryHelper.binary(from: recipientAmount)
+        
+        expectedAmountLabel.text = recipientAmountString
+    }
 }
 
 // MARK: - Extensions -
@@ -105,4 +115,5 @@ extension SendMoneyViewController: UITextFieldDelegate {
                 return true
         }
     }
+    
 }
